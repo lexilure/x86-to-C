@@ -1,0 +1,2 @@
+^C:\USERS\ALEXA\SOURCE\REPOS\PROJECT2\FUNC.ASM
+C:\nasm\nasm -fwin64 func.asm
