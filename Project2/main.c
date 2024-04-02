@@ -13,7 +13,7 @@ double dot_product_c(const double* a, const double* b, int n) {
     }
     return result;
 }
-int main() {
+int main() { 
     int n;
     printf("Enter the size of the vectors (2^n): ");
     int size = (int)pow(2, n);
@@ -32,18 +32,45 @@ int main() {
         b[i] = size - i;     
     }
 
+    LARGE_INTEGER frequency, start, end;
+    QueryPerformanceFrequency(&frequency);
 
+    double time_c_total = 0.0, time_asm_total = 0.0, time_c = 0.0, time_asm = 0.0;
+    double result_c, result_asm;
+    int iterations = 30; // how many times it will run
 
-    // Call assembly function
-    double result_asm = dot_product_asm(a, b, n);
-    printf("Dot product (Assembly): %lf\n", result_asm);
+    for (int i = 0; i < iterations; i++) {
+        QueryPerformanceCounter(&start);
+        result_c = dot_product_c(a, b, size); // passing size
+        QueryPerformanceCounter(&end);
+        time_c = (double)(end.QuadPart - start.QuadPart) * 1000.0 / frequency.QuadPart; // acumulate time in miliseconds
+        time_c_total += time_c;
+        printf("Dot product C: %lf, Time: %lf ms\n", result_c, time_c);
 
-    // Call C function
-    double result_c = dot_product_and_measure_time(a, b, n);
-    printf("Dot product (C): %lf\n", result_c);
+        QueryPerformanceCounter(&start);
+        result_asm = dot_product_asm(a, b, size); // passing size
+        QueryPerformanceCounter(&end);
+        time_asm = (double)(end.QuadPart - start.QuadPart) * 1000.0 / frequency.QuadPart; // Accumulate time in milliseconds
+        time_asm_total += time_asm;
+        printf("Dot product asm: %lf, Time: %lf ms\n", result_asm, time_asm);
+    }
+
+    // calculate average times
+    double avg_time_c = time_c_total / iterations;
+    double avg_time_asm = time_asm_total / iterations;
+    if (result_c == result_asm)
+        printf("Dot product C and ASM results are equal\n");
+    else
+        printf("Dot product C and ASM results are not equal\n");
+    printf("Average Dot product C time: %lf ms\n", avg_time_c);
+    printf("Average Dot product ASM time: %lf ms\n", avg_time_asm);
+
+    // free allocated memory
+    free(a);
+    free(b);
 
     return 0;
-}
 
-// C function to calculate dot product and measure time
 
+
+    }
