@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include <windows.h>
 
-extern double dot_product_asm(double* a, double* b, int n); // Assembly function prototype
+// Assembly function prototype
+extern double dot_product_asm(const double* a, const double* b, int n);
 
 // Function prototype
 double dot_product_and_measure_time(const double* a, const double* b, int n);
@@ -12,6 +13,19 @@ int main() {
     const int n = 5;
     double a[5] = { 1.0, 2.0, 3.0, 4.0, 5.0 };
     double b[5] = { 5.0, 4.0, 3.0, 2.0, 1.0 };
+
+    // Print example vectors
+    printf("Example vectors:\n");
+    printf("Vector A: ");
+    for (int i = 0; i < n; i++) {
+        printf("%lf ", a[i]);
+    }
+    printf("\n");
+    printf("Vector B: ");
+    for (int i = 0; i < n; i++) {
+        printf("%lf ", b[i]);
+    }
+    printf("\n");
 
     // Call assembly function
     double result_asm = dot_product_asm(a, b, n);
