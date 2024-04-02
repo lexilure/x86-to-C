@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jon\\Documents\\School\\DLSU BS CS-ST\\Third Year\\Second Term\\LBYARCH\\MP2\\Ver2\\x86-to-C\\Project2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB89123-44B3-43FB-AC13-153F5AB1EBA8}|Project2.vcxproj|C:\\Users\\Jon\\Documents\\School\\DLSU BS CS-ST\\Third Year\\Second Term\\LBYARCH\\MP2\\Ver2\\x86-to-C\\Project2\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4FB89123-44B3-43FB-AC13-153F5AB1EBA8}|Project2.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB89123-44B3-43FB-AC13-153F5AB1EBA8}|Project2.vcxproj|C:\\Users\\Jon\\Documents\\School\\DLSU BS CS-ST\\Third Year\\Second Term\\LBYARCH\\MP2\\Ver2\\x86-to-C\\Project2\\func.asm||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4FB89123-44B3-43FB-AC13-153F5AB1EBA8}|Project2.vcxproj|solutionrelative:func.asm||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.c",
+              "DocumentMoniker": "C:\\Users\\Jon\\Documents\\School\\DLSU BS CS-ST\\Third Year\\Second Term\\LBYARCH\\MP2\\Ver2\\x86-to-C\\Project2\\main.c",
+              "RelativeDocumentMoniker": "main.c",
+              "ToolTip": "C:\\Users\\Jon\\Documents\\School\\DLSU BS CS-ST\\Third Year\\Second Term\\LBYARCH\\MP2\\Ver2\\x86-to-C\\Project2\\main.c",
+              "RelativeToolTip": "main.c",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2024-04-02T05:03:54.738Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "func.asm",
+              "DocumentMoniker": "C:\\Users\\Jon\\Documents\\School\\DLSU BS CS-ST\\Third Year\\Second Term\\LBYARCH\\MP2\\Ver2\\x86-to-C\\Project2\\func.asm",
+              "RelativeDocumentMoniker": "func.asm",
+              "ToolTip": "C:\\Users\\Jon\\Documents\\School\\DLSU BS CS-ST\\Third Year\\Second Term\\LBYARCH\\MP2\\Ver2\\x86-to-C\\Project2\\func.asm",
+              "RelativeToolTip": "func.asm",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-02T05:03:53.981Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
