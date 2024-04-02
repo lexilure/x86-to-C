@@ -10,17 +10,17 @@ The scalar dot product has various applications in physics, engineering, compute
 The program will compare the results of the sdot in both debug and release
 
 **2^20**
-Debug:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-Release:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+* Debug:
+![alt text](https://github.com/lexilure/x86-to-C/blob/7c4dd07fb11b692ec116389f29ce0c3a80e98b12/Project2/screenshots/Screenshot%202024-04-02%20233727.png?raw=true)
+* Release:
+![alt text](https://github.com/lexilure/x86-to-C/blob/7c4dd07fb11b692ec116389f29ce0c3a80e98b12/Project2/screenshots/Screenshot%202024-04-02%20235354.png?raw=true)
 **2^24**
-Debug:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-Release:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+* Debug:
+![alt text](https://github.com/lexilure/x86-to-C/blob/7c4dd07fb11b692ec116389f29ce0c3a80e98b12/Project2/screenshots/Screenshot%202024-04-02%20234013.png?raw=true)
+* Release:
+![alt text](https://github.com/lexilure/x86-to-C/blob/7c4dd07fb11b692ec116389f29ce0c3a80e98b12/Project2/screenshots/Screenshot%202024-04-02%20235610.png?raw=true)
 **2^30**
-Debug:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
-Release:
-![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+* Debug:
+![alt text](https://github.com/lexilure/x86-to-C/blob/7c4dd07fb11b692ec116389f29ce0c3a80e98b12/Project2/screenshots/Screenshot%202024-04-02%20234520.png?raw=true)
+* Release:
+![alt text](https://github.com/lexilure/x86-to-C/blob/7c4dd07fb11b692ec116389f29ce0c3a80e98b12/Project2/screenshots/Screenshot%202024-04-02%20235734.png?raw=true)
