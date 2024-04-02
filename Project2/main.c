@@ -20,7 +20,7 @@ int main() {
 
     int size = (int)pow(2, n);
 
- 
+   
     double* a = (double*)malloc(size * sizeof(double));
     double* b = (double*)malloc(size * sizeof(double));
 
@@ -31,8 +31,8 @@ int main() {
 
    
     for (int i = 0; i < size; i++) {
-        a[i] = i + 1;         
-        b[i] = size - i;     
+        a[i] = i + 1;        
+        b[i] = size - i;    
     }
 
     LARGE_INTEGER frequency, start, end;
@@ -40,7 +40,7 @@ int main() {
 
     double time_c_total = 0.0, time_asm_total = 0.0, time_c = 0.0, time_asm = 0.0;
     double result_c, result_asm;
-    int iterations = 30; // Run 30 times
+    int iterations = 30; 
 
     for (int i = 0; i < iterations; i++) {
         QueryPerformanceCounter(&start);
@@ -58,7 +58,7 @@ int main() {
         printf("Dot product asm: %lf, Time: %lf ms\n", result_asm, time_asm);
     }
 
-
+    
     double avg_time_c = time_c_total / iterations;
     double avg_time_asm = time_asm_total / iterations;
     if (result_c == result_asm)
@@ -68,7 +68,7 @@ int main() {
     printf("Average Dot product C time: %lf ms\n", avg_time_c);
     printf("Average Dot product ASM time: %lf ms\n", avg_time_asm);
 
-
+    
     free(a);
     free(b);
 
