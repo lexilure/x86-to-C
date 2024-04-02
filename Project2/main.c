@@ -16,6 +16,7 @@ double dot_product_c(const double* a, const double* b, int n) {
 int main() { 
     int n;
     printf("Enter the size of the vectors (2^n): ");
+    scanf_s("%d", &n);
     int size = (int)pow(2, n);
  
     //memory allocation
