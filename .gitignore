@@ -14,3 +14,5 @@ Project2/.vs/Project2/FileContentIndex/03446b95-bead-4e0a-9b10-15a9d5a4a849.vsid
 *.lastbuildstate
 Project2/Project2/x64/Debug/Project2.tlog/CustomBuild.command.1.tlog
 Project2/Project2/x64/Debug/Project2.tlog/CustomBuild.read.1.tlog
+*.log
+/Project2/Project2/x64/Debug

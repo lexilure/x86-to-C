@@ -1,2 +1,2 @@
 ^C:\USERS\ALEXA\ONEDRIVE\DOCUMENTS\X86-TO-C\PROJECT2\FUNC.ASM
-C:\nasm\nasm -fwin64 func.asm
+C:\nasm\nasm -f win64 func.asm

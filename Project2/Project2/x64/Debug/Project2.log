@@ -1,3 +1,4 @@
 ﻿  Performing Custom Build Tools
-  func.asm:1: error: unable to open include file `io64.inc': No such file or directory
-C:\Program Files\Microsoft Visual Studio\2022\Preview\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): error MSB8066: Custom build for 'func.asm' exited with code 1.
+func.obj : error LNK2017: 'ADDR32' relocation to '.data' invalid without /LARGEADDRESSAWARE:NO
+func.obj : error LNK2017: 'ADDR32' relocation to '.data' invalid without /LARGEADDRESSAWARE:NO
+LINK : fatal error LNK1165: link failed because of fixup errors

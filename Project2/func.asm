@@ -1,5 +1,3 @@
-%include "io64.inc"
-
 section .data
 vectorA dq 1.0, 2.0, 3.0, 4.0, 5.0 ; Example vector A of length 5
 vectorB dq 5.0, 4.0, 3.0, 2.0, 1.0  ; Example vector B of length 5
