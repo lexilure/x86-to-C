@@ -14,20 +14,25 @@ double dot_product_c(const double* a, const double* b, int n) {
     return result;
 }
 int main() {
+    int n;
+    printf("Enter the size of the vectors (2^n): ");
+    int size = (int)pow(2, n);
+ 
+    //memory allocation
+    double* a = (double*)malloc(size * sizeof(double));
+    double* b = (double*)malloc(size * sizeof(double));
+
+    if (a == NULL || b == NULL) {
+        printf("Memory allocation failed\n");
+        return 1;
+    }
+
+    for (int i = 0; i < size; i++) {
+        a[i] = i + 1;         
+        b[i] = size - i;     
+    }
 
 
-    // Print example vectors
-    printf("Example vectors:\n");
-    printf("Vector A: ");
-    for (int i = 0; i < n; i++) {
-        printf("%lf ", a[i]);
-    }
-    printf("\n");
-    printf("Vector B: ");
-    for (int i = 0; i < n; i++) {
-        printf("%lf ", b[i]);
-    }
-    printf("\n");
 
     // Call assembly function
     double result_asm = dot_product_asm(a, b, n);
